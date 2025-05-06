@@ -1,6 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+html body {
+    height: 100%;
+}
+
 body {
-    
+    font-family: "Cabin";
+    color: #ffffff
 }
 
 #navi {
+    background-color: rgba(0, 0, 0, 0.5);
+      
 }
+
+#who {
+    background-color: #000000;
+    padding-bottom: 40px;
+}
+
+.icons {
+    background-color:#35b8e0;
+    text-align: center;
+    padding: 4px 0;
+}
+
+.row {
+    text-align:start;
+}
+
+#highlight {
+    background-color: #000000;
+}
+
+#btn1 {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+#btn2 {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+#btn3 {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+#btn4 {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+/* 
+a {
+    font-family: "Cabin";
+    color: #ffffff !important;
+}
+#navbarSupportedContent {
+    color: #ffffff
+} */

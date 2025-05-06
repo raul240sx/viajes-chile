@@ -11,33 +11,157 @@
     <link rel="stylesheet" href="assets/css/style.css">                                                                                     <!-- Link a archivo style.css -->
     <link rel="shortcut icon" href="assets/img/viajes.svg" type="image/x-icon">                                                             <!-- Link de favicon -->
 </head>
-<body>
-    <!-- Sección de barra de navegación -->
-    <nav class="navbar navbar-expand-lg fixed-top" id="navi">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            <ul class="nav">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Active</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-            </ul>
-          </div>
-        </div>
-    </nav>
+<body text="">
+    <!-- Sección header con barra de navegación -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark" id="navi">
+            <div class="container-fluid">
+                <div>
+                    <img src="assets/img/viajes.svg" height="40px" width="40px">
+                    <a class="navbar-brand" href="#">Viajes Chile</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menú</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item d-none d-lg-block">
+                                <a class="nav-link active" href="#">Quienes Somos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Destacados</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
+
+
+    </header>
+    
+    <main>  <!-- Sección main html semántico -->
+        <section>       <!-- Sección de carrusel con transición automatica -->
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="text-center d-none d-lg-block" id="who"> <!-- Sección de Quienes somos utilizando el layout Grid -->
+            <h2 class="py-4">¿QUIENES SOMOS?</h2>
+            <div>
+                <div class="container text-center">
+                    <div class="row">
+                      <div class="col">
+                        <div class="icons">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="27" viewBox="0 0 576 512"><path fill="#ffffff" d="M482.3 192c34.2 0 93.7 29 93.7 64c0 36-59.5 64-93.7 64l-116.6 0L265.2 495.9c-5.7 10-16.3 16.1-27.8 16.1l-56.2 0c-10.6 0-18.3-10.2-15.4-20.4l49-171.6L112 320 68.8 377.6c-3 4-7.8 6.4-12.8 6.4l-42 0c-7.8 0-14-6.3-14-14c0-1.3 .2-2.6 .5-3.9L32 256 .5 145.9c-.4-1.3-.5-2.6-.5-3.9c0-7.8 6.3-14 14-14l42 0c5 0 9.8 2.4 12.8 6.4L112 192l102.9 0-49-171.6C162.9 10.2 170.6 0 181.2 0l56.2 0c11.5 0 22.1 6.2 27.8 16.1L365.7 192l116.6 0z"/></svg>       
+                        </div>
+                        <div class="py-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et perferendis beatae odio possimus quas nesciunt ea nemo itaque porro laborum nobis, asperiores eos reprehenderit quaerat delectus maiores? Consectetur, eius voluptates! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, ut natus iure cum vel iste. Saepe enim, facilis atque deleniti eius repudiandae deserunt maiores quibusdam explicabo iusto harum ad ratione? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis consequatur vitae dicta a atque debitis! Dolorum atque quibusdam incidunt quisquam esse in recusandae cupiditate voluptatibus a ipsum minus, repellat modi.
+                        </div>
+                      </div>
+                      <div class="col">                       
+                        <div class="pb-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et perferendis beatae odio possimus quas nesciunt ea nemo itaque porro laborum nobis, asperiores eos reprehenderit quaerat delectus maiores? Consectetur, eius voluptates! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, ut natus iure cum vel iste. Saepe enim, facilis atque deleniti eius repudiandae deserunt maiores quibusdam explicabo iusto harum ad ratione? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis consequatur vitae dicta a atque debitis! Dolorum atque quibusdam incidunt quisquam esse in recusandae cupiditate voluptatibus a ipsum minus, repellat modi.
+                        </div>
+                        <div class="icons">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 512 512"><path fill="#ffffff" d="M256 32c12.5 0 24.1 6.4 30.8 17L503.4 394.4c5.6 8.9 8.6 19.2 8.6 29.7c0 30.9-25 55.9-55.9 55.9L55.9 480C25 480 0 455 0 424.1c0-10.5 3-20.8 8.6-29.7L225.2 49c6.6-10.6 18.3-17 30.8-17zm65 192L256 120.4 176.9 246.5l18.3 24.4c6.4 8.5 19.2 8.5 25.6 0l25.6-34.1c6-8.1 15.5-12.8 25.6-12.8l49 0z"/></svg>      
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="icons">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 512 512"><path fill="#ffffff" d="M512 96c0 50.2-59.1 125.1-84.6 155c-3.8 4.4-9.4 6.1-14.5 5L320 256c-17.7 0-32 14.3-32 32s14.3 32 32 32l96 0c53 0 96 43 96 96s-43 96-96 96l-276.4 0c8.7-9.9 19.3-22.6 30-36.8c6.3-8.4 12.8-17.6 19-27.2L416 448c17.7 0 32-14.3 32-32s-14.3-32-32-32l-96 0c-53 0-96-43-96-96s43-96 96-96l39.8 0c-21-31.5-39.8-67.7-39.8-96c0-53 43-96 96-96s96 43 96 96zM117.1 489.1c-3.8 4.3-7.2 8.1-10.1 11.3l-1.8 2-.2-.2c-6 4.6-14.6 4-20-1.8C59.8 473 0 402.5 0 352c0-53 43-96 96-96s96 43 96 96c0 30-21.1 67-43.5 97.9c-10.7 14.7-21.7 28-30.8 38.5l-.6 .7zM128 352a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM416 128a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/></svg>      
+                        </div>
+                        <div class="py-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et perferendis beatae odio possimus quas nesciunt ea nemo itaque porro laborum nobis, asperiores eos reprehenderit quaerat delectus maiores? Consectetur, eius voluptates! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, ut natus iure cum vel iste. Saepe enim, facilis atque deleniti eius repudiandae deserunt maiores quibusdam explicabo iusto harum ad ratione? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis consequatur vitae dicta a atque debitis! Dolorum atque quibusdam incidunt quisquam esse in recusandae cupiditate voluptatibus a ipsum minus, repellat modi.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+
+        <section id="highlight" class="text-center"> <!-- Sección Destacados utilizando Cards -->
+            <h3 class="py-4">DESTACADOS</h3>
+            <div class="container text-center">
+                <div class="row row-cols-1 row-cols-lg-4">
+                    <div class="col py-4 px-5 px-lg-2">
+                        <div class="card h-100 border-light" style="margin: 0 auto; background-color: #35b8e0;">
+                            <img src="assets/img/card1.jpg" class="card-img-top" style="max-height: 202px;">
+                            <div class="card-body d-flex flex-wrap" style="color: #ffffff;">
+                                <h5 class="card-title">Lorem ipsum dolor</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab consequatur aliquam laboriosam</p>
+                                <a id="btn1" class="btn btn-outline-info align-self-end">Mostrar/Ocultar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col py-4 px-5 px-lg-2">
+                        <div class="card h-100 border-light" style="margin: 0 auto; background-color: #35b8e0;">
+                            <img src="assets/img/card2.jpg" class="card-img-top" style="max-height: 202px;">
+                            <div class="card-body d-flex flex-wrap" style="color: #ffffff;">
+                                <h5 class="card-title">Lorem ipsum dolor</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab consequatur aliquam laboriosam</p>
+                                <a  id="btn2" class="btn btn-outline-info align-self-end">Mostrar/Ocultar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col py-4 px-5 px-lg-2">
+                        <div class="card h-100 border-light" style="margin: 0 auto; background-color: #35b8e0;">
+                            <img src="assets/img/card3.jpg" class="card-img-top" style="height: 202px;">
+                            <div class="card-body  d-flex flex-wrap" style="color: #ffffff;">
+                                <h5 class="card-title">Lorem ipsum dolor</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab consequatur aliquam laboriosam</p>
+                                <a id="btn3" class="btn btn-outline-info align-self-end";>Mostrar/Ocultar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col py-4 px-5 px-lg-2">
+                        <div class="card h-100 border-light" style="margin: 0 auto; background-color: #35b8e0;">
+                            <img src="assets/img/card3.jpg" class="card-img-top" style="height: 202px;">
+                            <div class="card-body  d-flex flex-wrap" style="color: #ffffff;">
+                                <h5 class="card-title">Lorem ipsum dolor</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab consequatur aliquam laboriosam</p>
+                                <a id="btn4" class="btn btn-outline-info align-self-end";>Mostrar/Ocultar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    
     
 </body>
 </html>
