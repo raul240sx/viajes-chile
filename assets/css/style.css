@@ -69,11 +69,8 @@ body {
     background-color: #35b8e0;
 }
 
-/* 
-a {
-    font-family: "Cabin";
-    color: #ffffff !important;
+#foot {
+    background-color: #35b8e0;
+    height: 75px;
 }
-#navbarSupportedContent {
-    color: #ffffff
-} */
+
