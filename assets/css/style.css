@@ -71,7 +71,8 @@ body {
 
 #foot {
     background-color: #35b8e0;
-    height: 80px;
+    height: auto;
+    min-height: 80px;
     font-size: 20pt;
 }
 
