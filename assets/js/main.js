@@ -1,6 +1,8 @@
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
+
+/* Generar alert al presionar el boton "enviar" en la sección de "Contacto" */
 $('#btn5').click(function(){
     alert("Gracias por tu mensaje")
 })
@@ -32,49 +34,62 @@ function changeColor(){
 };
  */
 
-
+/* Esconder la información de las cards, cambiando el texto del botón de Ocultar a mostrar y viceversa */
 $('#btn1').click(function(){
     $('#imgCard1, #pCard1').toggle()
-    var hCard1 = $('#card1').css("height")
-    if (hCard1 == "80px"){
-        $('#card1').css('height', '100%')
+    var nameBtn1 = document.getElementById("btn1")
+
+    if (nameBtn1.value == "Mostrar"){
+        nameBtn1.value = "Ocultar";
+        nameBtn1.innerHTML = "Ocultar";
+
     }
-    if (hCard1 != "80px"){
-        $('#card1').css('height', '150px')
+    else{
+        nameBtn1.value = "Mostrar";
+        nameBtn1.innerHTML = "Mostrar";
+
     }
 })
 
 $('#btn2').click(function(){
     $('#imgCard2, #pCard2').toggle()
-    var hCard2 = $('#card2').css("height")
-    if (hCard2 == "80px"){
-        $('#card2').css('height', '100%')
+    var nameBtn2 = document.getElementById("btn2")
+
+    if (nameBtn2.value == "Mostrar"){
+        nameBtn2.value = "Ocultar";
+        nameBtn2.innerHTML = "Ocultar";
     }
-    if (hCard2 != "80px"){
-        $('#card2').css('height', '150px')
+    else{
+        nameBtn2.value = "Mostrar";
+        nameBtn2.innerHTML = "Mostrar";
     }
 })
 
 $('#btn3').click(function(){
     $('#imgCard3, #pCard3').toggle()
-    var hCard3 = $('#card3').css("height")
-    if (hCard3 == "80px"){
-        $('#card3').css('height', '100%')
+    var nameBtn3 = document.getElementById("btn3")
+
+    if (nameBtn3.value == "Mostrar"){
+        nameBtn3.value = "Ocultar";
+        nameBtn3.innerHTML = "Ocultar";
     }
-    if (hCard3 != "80px"){
-        $('#card3').css('height', '150px')
+    else{4
+        nameBtn3.value = "Mostrar";
+        nameBtn3.innerHTML = "Mostrar";
     }
 })
 
 $('#btn4').click(function(){
     $('#imgCard4, #pCard4').toggle()
-    var hCard4 = $('#card4').css("height")
-    if (hCard4 == "80px"){
-        $('#card4').css('height', '100%')
+    var nameBtn4 = document.getElementById("btn4")
+
+    if (nameBtn4.value == "Mostrar"){
+        nameBtn4.value = "Ocultar";
+        nameBtn4.innerHTML = "Ocultar";
     }
-    if (hCard4 != "80px"){
-        $('#card4').css('height', '150px')
+    else{
+        nameBtn4.value = "Mostrar";
+        nameBtn4.innerHTML = "Mostrar";
     }
 })
-
 

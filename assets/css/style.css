@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');  /* CDN fuente Cabin desde google fonts */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -76,3 +76,9 @@ body {
     font-size: 20pt;
 }
 
+.tooltip .tooltip-inner {
+    --bs-tooltip-bg: #4d8bb7;
+}
+.tooltip .tooltip-arrow::before {
+    --bs-tooltip-bg: #4d8bb7;
+}
