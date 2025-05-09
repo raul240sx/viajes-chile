@@ -26,6 +26,11 @@ body {
 }
 
 
+/* Ajuste de color de fondo con opacidad para dar contraste a los títulos de las imágenes del carrusel  */
+.carTitle {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 /* Ajuste de color de fondo y padding inferior para la sección de "Quienes somos" */
 #who {
     background-color: #000000;

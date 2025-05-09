@@ -21,8 +21,9 @@ function myValidation() {
     }
     else {
         alert('Gracias por tu mensaje, pronto nos pondremos en contacto contigo\n                                   Que tengas un lido día!!!');
+        form.reset();
     } 
-    form.reset();
+
 } 
 
 
