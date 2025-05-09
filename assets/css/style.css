@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');  /* CDN fuente Cabin desde google fonts */
+
+
+/* Configuración inicial del archivo CSS */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -8,35 +11,49 @@ html body {
     height: 100%;
 }
 
+
+/* Configuración de la fuente y color de fuente de la página */
 body {
     font-family: "Cabin";
     color: #ffffff
 }
 
+
+/* Ajuste de color de fondo de la barra de navegación con ajuste de opacidad para dar contraste a las letras */
 #navi {
     background-color: rgba(0, 0, 0, 0.5);
       
 }
 
+
+/* Ajuste de color de fondo y padding inferior para la sección de "Quienes somos" */
 #who {
     background-color: #000000;
     padding-bottom: 40px;
 }
 
+
+/* Ajuste de color de fondo, alineación del texto y padding general de los íconos de la sección "Quienes Somos" */
 .icons {
     background-color:#35b8e0;
     text-align: center;
     padding: 4px 0;
 }
 
+
+/* Ajuste de alineación de texto los elementos de la fila del grid en la sección "Quienes Somos" */
 .row {
     text-align:start;
 }
 
+
+/* Ajuste de color de fondo para la sección de destacados */
 #highlight {
     background-color: #000000;
 }
 
+
+/* Ajuste de colores de fondo y de bordes para los botones btn1, btn2, btn3, btn4 y btn5 */
 #btn1 {
     color: #ffffff;
     border-color: #ffffff;
@@ -57,18 +74,21 @@ body {
     border-color: #ffffff;
 }
 
-#contact {
-    background-color: #000000;
-    /* padding: 0 10%; */
-    padding-bottom: 4%;
-}
-
 #btn5 {
     color: #ffffff;
     border-color: #ffffff;
     background-color: #35b8e0;
 }
 
+
+/* Ajuste de color de fondo y padding inferior para la sección de contacto */
+#contact {
+    background-color: #000000;
+    padding-bottom: 4%;
+}
+
+
+/* Ajustes de color de fondo, altura y tamaño de fuente para el footer */
 #foot {
     background-color: #35b8e0;
     height: auto;
@@ -76,6 +96,8 @@ body {
     font-size: 20pt;
 }
 
+
+/* Cambio de color para los tooltip y flecha del tooltip */
 .tooltip .tooltip-inner {
     --bs-tooltip-bg: #4d8bb7;
 }
